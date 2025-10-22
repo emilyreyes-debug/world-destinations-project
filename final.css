@@ -1,0 +1,190 @@
+/* -------------------- General Styles -------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #507b86; 
+    color: #e0e0e0; 
+}
+
+header {
+    background-color: #507b86;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #d0cfcf; 
+}
+
+/* -------------------- Navigation -------------------- */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a8a8a8; 
+    text-decoration: underline;
+}
+
+/* -------------------- Articles & Sections -------------------- */
+article {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #cfcfcf; 
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #d2b48c; 
+}
+
+h5 {
+    font-size: 1rem;
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #f5f5f5;
+    text-align: center;
+}
+
+a:hover {
+    color: #a8a8a8; /* muted hover */
+    text-decoration: underline;
+}
+
+/* -------------------- Lists & Definitions -------------------- */
+ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #e0c097; 
+}
+
+dl dd {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+/* -------------------- Gallery -------------------- */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.gallery img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.9);
+}
+
+/* -------------------- Asides -------------------- */
+aside {
+    background-color: #333;
+    border-left: 4px solid #555;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+/* -------------------- Footer -------------------- */
+footer {
+    background-color: #2c2c2c;
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* -------------------- Section Accents -------------------- */
+
+#section1 h2, #france h3 { color: #a8a8ff; }  
+#section2 h2, #italy h3 { color: #b2d8b2; }  
+#section3 h2, #borabora h3 { color: #88c0c9; } 
+#section4 h2, #japan h3 { color: #d8a48f; }  
+#section5 h2, #brazil h3 { color: #c0b974; }  
+#section6 h2, #uae h3 { color: #d4bdbd; }   
+#section7 h2, #maldives h3 { color: #8fc1c3; } 
+#section8 h2, #spain h3 { color: #e0a878; } 
+
+/* -------------------- Responsive -------------------- */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        max-width: 80%;
+    }
+
+    article {
+        padding: 1rem;
+    }
+
+    a {
+        flex-direction: column;
+    }
+}
